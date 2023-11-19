@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="smile.svg">
+    <title>FaceApp generator</title>
+    <link rel="stylesheet" href="project_6.css">
+    <script defer src="project_6.js"></script>
+</head>
+
+<body class="wrapper">
+    <form class="data-container" id="form">
+        <div class="box gender-box">
+            <p class="box-title">Select Gender</p>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="box origin-box">
+            <p class="box-title">Select ethnicity</p>
+            <select name="ethnicity" id="ethnicity">
+                <option value="european">Europe</option>
+                <option value="african">Africa</option>
+                <option value="east_asian">Asia</option>
+            </select>
+        </div>
+        <div class="box">
+            <label for="age" class="age">Age (0-70) <input type="number" id="age" min="0" max="70" value="0" required></label>
+        </div>
+        <button class="btn-face-maker" type="submit">Generate face</button>
+    </form>
+
+    <h2 class="header">Generated face photo:</h2>
+    <div class="photo-result">
+        
+    </div>
+
+</body>
+
+</html>
