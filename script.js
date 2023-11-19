@@ -14,17 +14,6 @@ console.log(gender, age, ethnicity);
     },
   }
 
-  //asynchroniczność
-  //fetch
-  //promise
-  //async await
-  //try
-  //catch
-
-  //wysyłamy żadania - czekamy
-  // dostaliśmy odpowiedź
-  //przerabiwamy odpowiedź
-  // coś robimy z odpowiedzią
   try {
     const response = await fetch(url, options)
     const result = await response.blob()
@@ -40,12 +29,10 @@ console.log(gender, age, ethnicity);
     const img = document.createElement("img")
     img.classList.add("photo")
     img.setAttribute("src", url)
-    imgPlace.appendChild(img)
+    imgPlace.insertBefore(img, imgPlace.firstChild);
   }
   
 }
 
 document.querySelector('#form').addEventListener('submit', getFace)
 
-// const btn = document.querySelector(".btn-face-maker")
-// btn.addEventListener("click" , getFace)
